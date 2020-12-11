@@ -1,0 +1,258 @@
+@import "colores";
+
+html,body,.fullHeight {
+  height: 100%;
+}
+
+.centerInXY {
+  display: grid;
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.back--grad{
+  @extend.fadeInUp;
+  background-image: linear-gradient(to bottom, white, $colorOliva);
+  height: 100%;
+}
+
+.div--paddingTopBot {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+    .text--size20 {font-size: 20px;} 
+    .text--coral {color: coral;}
+    .text--size30 {font-size: 30px;}
+    .text--alignCenter {text-align: center;}
+    .text--alignRight {text-align: right;}
+
+.overflowHid{
+  overflow: hidden;
+}
+.carousel-item {
+    img{width: 100%;}
+}
+.div--gridCentralX {
+  display: grid;
+  justify-content: center;
+}
+.div--gridCentralY {
+  display: grid;
+  align-content: space-evenly;
+}
+h2 {
+  @extend.alluraFont;
+  text-align: center;
+  font-size: 50px;
+  color: $colorOliva;
+}
+/*----------------------------------------------------------------------------------BOTONES CONTACTO-*/
+$redes: (
+  instagram: $backInsta,
+  whatsapp:  $backWpp,
+  email: $backMail
+); 
+
+@each $red, $color in $redes {
+  .btn--#{$red} {
+    background-color: $color;
+    color: white;
+    font-size: medium;
+    border-radius: 30px;
+   }
+}
+
+ .btn:hover {
+  transform: scale(1.2);
+  color: white;
+  transition: all 0.5s;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+form {
+    padding: 15px;
+}
+.back-burlywood {
+    background-color: burlywood;
+}
+.text--blue {
+    color: cadetblue;
+}
+.text--coral {
+    color: coral;
+}
+.indexLogo {
+    color: $colorOliva;
+    font-family: 'Allura', cursive;
+    font-weight: 400;
+    text-align: center;
+    font-size: 100px;
+    line-height: 0.7;
+    height: 200px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+    width: auto;
+    background-image: 
+        url(img/h1.JPEG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+.alluraFont {
+    font-family: 'Allura', cursive;
+}
+.questrialFont {
+    font-family: 'Questrial', sans-serif;
+}
+a {
+    color: $colorOliva;
+    text-decoration: none;
+    background-color: transparent;
+}
+.nav {
+    background-color: beige;
+}
+.nav-item a:hover {
+    color: coral;
+    transform: scale(1.2,1.2);
+    transition: all 0.5s;
+}
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+footer {
+    background-color: $colorOliva;
+}
+h1 {
+    color: white;
+    font-family: 'Allura', cursive;
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.1;
+    margin: auto;
+    height: 125px;
+    background-color: $colorOliva;
+    background-image: 
+        url(img/dharma1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+}
+.gal-item {
+  @extend.div--paddingTopBot;
+  @extend.div--gridCentralY;
+  justify-content: center;
+  overflow: hidden;
+}
+/*---------------------------------------------------------------------------------------ANIMACION*/
+
+@keyframes showUp {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+ .showUp {
+    animation-duration: 1s;
+    animation-name: showUp;
+ }
+
+ @keyframes flipInX {
+    0% {
+      transform: perspective(400px) rotateX(90deg);
+      opacity: 0;
+    }
+  
+    40% {
+      transform: perspective(400px) rotateX(-10deg);
+    }
+  
+    70% {
+      transform: perspective(400px) rotateX(10deg);
+    }
+  
+    100% {
+      transform: perspective(400px) rotateX(0deg);
+      opacity: 1;
+    }
+  }
+ 
+  .flipInX {
+    animation-duration: 1s;
+    animation-name: flipInX;
+  }
+
+  @keyframes slideInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-2000px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .slideInDown {
+    animation-duration: 1s;
+    animation-name: slideInDown;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(2000px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInUp {
+    animation-duration: 1s;
+    animation-name: fadeInUp;
+  }
+
+/*--------------------------------------------------------------------------------------RESPONSIVE*/
+/*-- Dispositivo > XS --*/
+@media (min-width: 768px) {
+    
+    h1 {
+        color: white;
+        font-family: 'Allura', cursive;
+        font-weight: 400;
+        text-align: left;
+        font-size: 100px;
+        line-height: 1.1;
+        margin: auto;
+        height: 125px;
+        background-color: $colorOliva;
+        background-image: 
+            url(img/dharma1.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+
+    }
+    
+}
