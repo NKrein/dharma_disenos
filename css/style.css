@@ -1,13 +1,14 @@
-html, body, .fullHeight {
-  height: 100%; }
-
+/*html,body,.fullHeight {
+  height: 100%;
+}*/
 .centerInXY {
   display: grid;
   align-content: space-evenly;
   justify-content: center; }
 
 body {
-  font-family: 'Questrial', sans-serif; }
+  font-family: 'Questrial', sans-serif;
+  color: beige; }
 
 .row {
   margin-right: 0;
@@ -58,26 +59,59 @@ h2 {
 /*----------------------------------------------------------------------------------BOTONES CONTACTO-*/
 .btn--instagram {
   background-color: #C13584;
+  width: 100%;
   color: white;
   font-size: medium;
-  border-radius: 30px; }
+  border-radius: 30px;
+  text-align: center; }
+
+.btn--facebook {
+  background-color: #3b5998;
+  width: 100%;
+  color: white;
+  font-size: medium;
+  border-radius: 30px;
+  text-align: center; }
 
 .btn--whatsapp {
   background-color: #25D366;
+  width: 100%;
   color: white;
   font-size: medium;
-  border-radius: 30px; }
+  border-radius: 30px;
+  text-align: center; }
 
 .btn--email {
   background-color: #C25E30;
+  width: 100%;
   color: white;
   font-size: medium;
-  border-radius: 30px; }
+  border-radius: 30px;
+  text-align: center; }
+
+.seccion-footer a {
+  text-decoration: none;
+  color: beige; }
+
+.seccion-footer li {
+  list-style: none;
+  height: 33px; }
+
+.seccion-item a:hover {
+  color: burlywood; }
 
 .btn:hover {
   transform: scale(1.2);
   color: white;
   transition: all 0.5s; }
+
+footer {
+  background-color: #8fa382; }
+  footer .footer--logo {
+    background-image: url(img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
 
 .container-fluid {
   padding-left: 0;
@@ -100,7 +134,7 @@ form {
   font-family: 'Allura', cursive;
   font-weight: 400;
   text-align: center;
-  font-size: 100px;
+  font-size: 95px;
   line-height: 0.7;
   height: 200px;
   padding-top: 5%;
@@ -134,9 +168,6 @@ a {
 p {
   margin-top: 1rem;
   margin-bottom: 1rem; }
-
-footer {
-  background-color: #8fa382; }
 
 h1 {
   color: white;
