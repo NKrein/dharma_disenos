@@ -20,9 +20,9 @@ body {
   margin-left: 0;
 }
 
-.back--grad{
+.back--oliva{
   @extend.fadeInUp;
-  background-image: linear-gradient(to bottom, white, $colorOliva);
+  background-color: $colorOliva;
   height: 100%;
 }
 
@@ -30,17 +30,18 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-    .text--size20 {font-size: 20px;} 
-    .text--coral {color: coral;}
-    .text--size30 {font-size: 30px;}
-    .text--alignCenter {text-align: center;}
-    .text--alignRight {text-align: right;}
+
+.text--size20 {font-size: 20px;} 
+.text--coral {color: coral;}
+.text--size30 {font-size: 30px;}
+.text--alignCenter {text-align: center;}
+.text--alignRight {text-align: right;}
 
 .overflowHid{
   overflow: hidden;
 }
 .carousel-item {
-    img{width: 100%;}
+  img{width: 100%;}
 }
 .div--gridCentralX {
   display: grid;
@@ -54,7 +55,7 @@ h2 {
   @extend.alluraFont;
   text-align: center;
   font-size: 50px;
-  color: $colorOliva;
+  color: white;
 }
 /*----------------------------------------------------------------------------------BOTONES CONTACTO-*/
 $redes: (
@@ -101,6 +102,19 @@ footer {
       background-repeat: no-repeat;
       background-position: center;
   }
+  .footer--copyright {
+    color: beige;
+    text-align: center;
+    font-size: 15px;
+    a {
+      color: beige;
+      text-decoration: none;
+
+    }
+    a:hover {
+      color: slategray;
+    }
+  }
 }
 
 .container-fluid {
@@ -119,6 +133,15 @@ form {
 .text--coral {
     color: coral;
 }
+.logo--fondoimg {
+  background-image: 
+    url(img/h1.JPEG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+
+}
 .indexLogo {
     color: $colorOliva;
     font-family: 'Allura', cursive;
@@ -131,11 +154,7 @@ form {
     padding-bottom: 5%;
     margin: auto;
     width: auto;
-    background-image: 
-        url(img/h1.JPEG);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    background: transparent;
 }
 .alluraFont {
     font-family: 'Allura', cursive;
