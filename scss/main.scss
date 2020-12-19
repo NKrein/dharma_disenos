@@ -1,8 +1,6 @@
 @import "colores";
 
-/*html,body,.fullHeight {
-  height: 100%;
-}*/
+
 
 .centerInXY {
   display: grid;
@@ -66,14 +64,23 @@ $redes: (
 ); 
 
 @each $red, $color in $redes {
-  .btn--#{$red} {
+  .btn--#{$red}{
+    color: beige;
+    background-color: transparent;
+    width: 100%;
+  }
+  .btn--#{$red}:hover {
     background-color: $color;
     width: 100%;
-    color: white;
     font-size: medium;
     border-radius: 30px;
     text-align: center;
   }
+}
+.icon-item {
+  width: 20px;
+  height: 20px;
+  text-align: left;
 }
 .seccion-footer {
   a {
@@ -179,6 +186,16 @@ p {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.back--h1 {
+    background-color: $colorOliva;
+    height: 125px;
+    background-image: 
+      url(img/dharma1.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+
+}
 h1 {
     color: white;
     font-family: 'Allura', cursive;
@@ -187,13 +204,7 @@ h1 {
     font-size: 50px;
     line-height: 1.1;
     margin: auto;
-    height: 125px;
     background-color: $colorOliva;
-    background-image: 
-        url(img/dharma1.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
 }
 .gal-item {
   @extend.div--paddingTopBot;
@@ -289,12 +300,6 @@ h1 {
         margin: auto;
         height: 125px;
         background-color: $colorOliva;
-        background-image: 
-            url(img/dharma1.jpg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
-
     }
     
 }

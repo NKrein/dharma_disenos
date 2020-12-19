@@ -1,6 +1,3 @@
-/*html,body,.fullHeight {
-  height: 100%;
-}*/
 .centerInXY {
   display: grid;
   align-content: space-evenly;
@@ -58,36 +55,57 @@ h2 {
 
 /*----------------------------------------------------------------------------------BOTONES CONTACTO-*/
 .btn--instagram {
+  color: beige;
+  background-color: transparent;
+  width: 100%; }
+
+.btn--instagram:hover {
   background-color: #C13584;
   width: 100%;
-  color: white;
   font-size: medium;
   border-radius: 30px;
   text-align: center; }
 
 .btn--facebook {
+  color: beige;
+  background-color: transparent;
+  width: 100%; }
+
+.btn--facebook:hover {
   background-color: #3b5998;
   width: 100%;
-  color: white;
   font-size: medium;
   border-radius: 30px;
   text-align: center; }
 
 .btn--whatsapp {
+  color: beige;
+  background-color: transparent;
+  width: 100%; }
+
+.btn--whatsapp:hover {
   background-color: #25D366;
   width: 100%;
-  color: white;
   font-size: medium;
   border-radius: 30px;
   text-align: center; }
 
 .btn--email {
+  color: beige;
+  background-color: transparent;
+  width: 100%; }
+
+.btn--email:hover {
   background-color: #C25E30;
   width: 100%;
-  color: white;
   font-size: medium;
   border-radius: 30px;
   text-align: center; }
+
+.icon-item {
+  width: 20px;
+  height: 20px;
+  text-align: left; }
 
 .seccion-footer a {
   text-decoration: none;
@@ -181,6 +199,14 @@ p {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
+.back--h1 {
+  background-color: #8fa382;
+  height: 125px;
+  background-image: url(img/dharma1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
 h1 {
   color: white;
   font-family: 'Allura', cursive;
@@ -189,12 +215,7 @@ h1 {
   font-size: 50px;
   line-height: 1.1;
   margin: auto;
-  height: 125px;
-  background-color: #8fa382;
-  background-image: url(img/dharma1.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; }
+  background-color: #8fa382; }
 
 .gal-item {
   justify-content: center;
@@ -262,8 +283,4 @@ h1 {
     line-height: 1.1;
     margin: auto;
     height: 125px;
-    background-color: #8fa382;
-    background-image: url(img/dharma1.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right; } }
+    background-color: #8fa382; } }
