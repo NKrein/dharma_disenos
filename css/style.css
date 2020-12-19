@@ -104,8 +104,15 @@ h2 {
 
 .icon-item {
   width: 20px;
-  height: 20px;
-  text-align: left; }
+  height: 20px; }
+
+.icon-itemContacto {
+  width: 75px;
+  height: 75px; }
+
+.btn--seccionContacto img:hover {
+  transform: scale(1.5);
+  transition: all 0.5s; }
 
 .seccion-footer a {
   text-decoration: none;
@@ -122,6 +129,10 @@ h2 {
   transform: scale(1.2);
   color: white;
   transition: all 0.5s; }
+
+.contacto_heart--size {
+  width: 200px;
+  height: 200px; }
 
 footer {
   background-color: #8fa382; }
@@ -271,6 +282,51 @@ h1 {
   animation-duration: 1s;
   animation-name: fadeInUp; }
 
+@keyframes showInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px); }
+  60% {
+    opacity: 1;
+    transform: translateX(30px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    transform: translateX(0); } }
+
+.showInLeft {
+  animation-duration: 2s;
+  animation-name: showInLeft; }
+
+@keyframes showInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px); }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    transform: translateX(0); } }
+
+.showInRight {
+  animation-duration: 2s;
+  animation-name: showInRight; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+.pulse {
+  animation-duration: 1s;
+  animation-name: pulse;
+  animation-iteration-count: infinite; }
+
 /*--------------------------------------------------------------------------------------RESPONSIVE*/
 /*-- Dispositivo > XS --*/
 @media (min-width: 768px) {
@@ -278,7 +334,7 @@ h1 {
     color: white;
     font-family: 'Allura', cursive;
     font-weight: 400;
-    text-align: left;
+    text-align: center;
     font-size: 100px;
     line-height: 1.1;
     margin: auto;
