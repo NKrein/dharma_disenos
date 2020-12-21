@@ -7,6 +7,11 @@ body {
   font-family: 'Questrial', sans-serif;
   color: beige; }
 
+.container-fluid {
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0; }
+
 .row {
   margin-right: 0;
   margin-left: 0; }
@@ -151,10 +156,6 @@ footer {
     footer .footer--copyright a:hover {
       color: slategray; }
 
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0; }
-
 form {
   padding: 15px; }
 
@@ -234,6 +235,14 @@ h1 {
 .gal-item {
   justify-content: center;
   overflow: hidden; }
+
+.img-gal {
+  width: 200px;
+  height: 200px; }
+
+.gal-item:hover {
+  transform: scale(1.5);
+  animation-duration: 2s; }
 
 /*---------------------------------------------------------------------------------------ANIMACION*/
 @keyframes showUp {
