@@ -31,7 +31,6 @@ body {
 .back--oliva{
   @extend.fadeInUp;
   background-color: $colorOliva;
-  height: 100%;
 }
 
 .div--paddingTopBot {
@@ -39,11 +38,29 @@ body {
   padding-bottom: 25px;
 }
 
-.text--size20 {font-size: 20px;} 
+.alluraFont {font-family: 'Allura', cursive;}
+
+.questrialFont {font-family: 'Questrial', sans-serif;}
+
+.text--blue {color: cadetblue;}
+
 .text--coral {color: coral;}
+
+.text--size20 {font-size: 20px;} 
+
 .text--size30 {font-size: 30px;}
+
+.text--size40 {font-size: 40px;}
+
+.text--size50 {font-size: 50px;}
+
 .text--alignCenter {text-align: center;}
+
 .text--alignRight {text-align: right;}
+
+.text--bold {font-weight: bold;}
+
+.text--underLine {text-decoration: underline;}
 
 .overflowHid{
   overflow: hidden;
@@ -74,11 +91,11 @@ $redes: (
   .btn--#{$red}{
     color: beige;
     background-color: transparent;
-    width: 100%;
+    width: auto;
   }
   .btn--#{$red}:hover {
     background-color: $color;
-    width: 100%;
+    width: auto;
     font-size: medium;
     border-radius: 30px;
     text-align: center;
@@ -97,6 +114,15 @@ $redes: (
     transform: scale(1.5);
     transition: all 0.5s;
   }
+}
+ul {
+  padding-inline-start: 0px;
+}
+.btn--footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .seccion-footer {
   a {
@@ -149,12 +175,6 @@ form {
 .back-burlywood {
     background-color: burlywood;
 }
-.text--blue {
-    color: cadetblue;
-}
-.text--coral {
-    color: coral;
-}
 .logo--fondoimg {
   background-image: 
     url(img/h1.png);
@@ -178,12 +198,6 @@ form {
 }
 .text--shadow{
   text-shadow: 2px 2px black;
-}
-.alluraFont {
-    font-family: 'Allura', cursive;
-}
-.questrialFont {
-    font-family: 'Questrial', sans-serif;
 }
 a {
     color: $colorOliva;
@@ -234,7 +248,7 @@ h1 {
 }
 .gal-item:hover {
   transform: scale(1.5);
-  animation-duration: 2s;
+  transition: 1s;
 
 }
 /*---------------------------------------------------------------------------------------ANIMACION*/
